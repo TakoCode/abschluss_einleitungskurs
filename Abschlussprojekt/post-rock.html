@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Was ist Post-Rock?</title>
+    <style>
+        body{
+            background-color: rgb(253, 245, 232);
+            padding: 5px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .p-one{
+            font-size: 1.5rem;
+            border: solid 2px rgb(105, 4, 4);
+            padding: 10px;
+            margin: 6px;
+        }
+        p{
+            font-size: 1.5rem;
+            margin: 10px;
+        }
+        .flex{
+            display:flex;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+        h1, h2, h3{
+            border-bottom: 3px solid black;
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            padding: 5px;
+            text-align: center;
+        }
+        #wip{
+            font-size: 3rem;
+            text-align: center;
+            margin: 50px;
+        }
+        img{
+            width: 500px;
+            height: auto;
+        }
+        #gliederung{
+            padding: 4px;
+            flex: 3;
+            border: black solid 1px;
+            margin: 10px;
+        }
+        .video{
+            flex: 1;
+        }
+        #erste-box{
+            align-items: flex-start;
+        }
+        #gl-ober{
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+        }
+        .gliederung{
+            font-size: large;
+        }
+        .themen div{
+            margin: 25px;
+            width: auto;
+        }
+        #fusszeile{
+            font-size: xx-large;
+            display: flex; 
+            align-items: flex-end; 
+            justify-content: space-evenly;
+            flex-direction: row;
+        }
+        button:hover{
+            font-size: xx-large;
+            color: yellow;
+            background-color: black;
+            cursor: pointer;
+        }
+        #fussborder{
+            border-bottom: black 3px solid;
+        }
+        #nl{
+            font-size: xx-large;
+        }
+        @media(max-width: 900px){
+            img{
+                width: 100%;
+            }
+            .video{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .flex{
+                flex-direction: column;
+            }
+            #fusszeile{
+                display: none;
+            }
+            span{
+                display: block;
+            }
+            #gliederung{
+                display: flex;
+                align-self: center;
+                font-size: xx-large;
+                padding: 20px;
+                text-align: center;
+            }
+            .gliederung{
+                font-size: xx-large;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="wip">Was ist Post-Rock?</h1>
+    </div>
+    <div class="flex" id="erste-box">
+        <div id="gliederung">
+            <ul> <!--Gliederungsbox der Themen, mit Links im Dokument versehen / Videoeinbettung rechts der Box-->
+                <li id="gl-ober">Gliederung</li>
+                <li class="gliederung">
+                    <a href="#einleitung">1. Einleitung</a>
+                </li>
+                <li class="gliederung">
+                    <a href="#entstehung">2. Entstehung</a>
+                </li>
+                <li class="gliederung">
+                    <a href="#stilmittel">3. Stilmittel</a>
+                </li>
+                <li class="gliederung">
+                    <a href="#quellen"> 4. Referenzen</a>
+                </li>
+            </ul>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YZl0Vr7mgeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+        <!--Überschriften der Gliederung, Abschnittweise getragen (bsp. Wikipedia)-->
+    <div>
+        <h2 class="themen" id="einleitung">Einleitung</h2>
+    </div>
+    <div class="flex">
+        <div>
+            <p class="p-one">Post-Rock ist ein Oberbegriff, dem viele verschiedene Kategorien und Stilrichtungen unterliegen. Hauptsächlich wird er als eine Mischung aus alternativem, bzw. Indie-Rock und Progressive-Rock angesehen, wobei grengreübergreifend Elemente ihre Verwendung finden. Beispielsweise ist es nicht ausgeschlossen, dass trotz elektronischem Instrumental auch klassische Instrumente (z.B. Violine, Piano, Xylophon, etc.) ihre Verwendung finden. Generell gibt es kaum eine feste Definition des Begriffs, jedoch sind besonders markante Merkmale, dass die Lieder häufig aus reinem Instrumental bestehen, eine ungewöhnliche Länge besitzen oder noch innerhalb des Songs einen Fokuswechsel in Betracht ziehen. Bekannte Vertreter des Genres sind u.a. Mono, sleepmakeswaves, God is an Astronaut und If These Trees Could Talk.</p>
+        </div>
+        <div>
+            <img src="./sleepmakeswaves_These-are-not-your-dreams.jpg">
+        </div>
+    </div>
+    <div>
+        <h2 class="themen" id="entstehung">Entstehung</h2>
+    </div>
+    <div class="flex">    
+        <div>
+            <p class="p-one">Der Anfang des Post-Rock wird auf die frühen 90er Jahre geschätzt, wobei vereinzelt maßgeblich beeinflussende Elemente bereits dem Shoegaze, welcher in den 80ern seinen Aufschwung erlebte, zugerechnet werden. Die Prägung des Begriffs "Post-Rock" führt auf beispielsweise den englischen Musikkritiker Simon Reynolds zurück, welcher nach einer neuen Kategorisierung für Bands wie Bark Psychosis oder Disco Inferno suchte. Auch wenn unter dem Oberbegriff viele, sehr unterschiedliche Musikstile ihre Heimat gefunden haben, ist es eine generelle Abgrenzung zum konventionellen Rock, da man sich oft versucht, den Normen zu entziehen.</p>
+        </div>
+        <div>
+            <img src="./mono-japan-band.jpg">
+        </div>
+    </div>
+        <div>
+            <h2 class="themen" id="stilmittel">Stilmittel</h2>
+        </div>
+    <div class="flex">
+        <div>
+            <p class="p-one">Wie bereits mehrfach angesprochen, setzt der Post-Rock nicht nur auf traditionelle Instrumente, welche für den Rock allgemein üblich sind. Dementsprechend liegt die Vielfalt der Melodik oft in der Hand der Interpreten und ihrer Bereitschaft, klassische, elektronische oder gänzlich abwegige Soundquellen zu verwenden, die man in konventionellen Musikgenres selten antrifft. So ist es nicht verwunderlich, dass Gesang oft komplett ausgelassen wird, Blues sich mit Metal verbindet, die Tracklänge mit 6 Minuten oder mehr eher der Norm entspricht oder das Narativ der Musik sich binnen kurzer Zeit wandelt. Rhythmus und Takt werden oft spielerisch ausgeschmückt und sind selten eingängig, jedoch trotzdem meist angenehm wahrzunehmender Natur. Außerdem sind Post-Rock-Interpreten häufig relativ simpel, wenn es darum geht, eine Bühnenshow zu organisieren, was die Konzerte mehr Fokus auf die Musik, statt einer Unterhaltungsshow legen lässt.</p>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xUjZH356d0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div>
+        <h3 class="themen" id="quellen">Referenzen</h3> <!--Aufzählung aller Referenzen für die Webseite-->
+    </div>
+    <div id="fussborder">
+        <p><a href="https://de.wikipedia.org/wiki/Post-Rock">Layout & Inspiration</a></p>
+        <p><a href="https://www.betreutesproggen.de/wp-content/uploads/2020/10/sleepmakeswaves_These-are-not-your-dreams.jpg">Bildquelle sleepmakeswaves-cover</a></p>
+        <p><a href="https://i2.wp.com/jetsettimes.com/wp-content/uploads/2015/07/mono-japan-band.jpg">Bildquelle Mono-Band</a></p>
+    </div>
+    <br>
+    <div id="nl">
+        <label>Newsletter:</label>
+        <input type="email" placeholder="...@...">
+        <button>Jetzt abonnieren</button>
+    </div>
+    <ul class="gliederung" id="fusszeile">
+    <!--Für sämtliche li simple Verlinkungen einfügen und hovern-->
+        <li><a href="https://digitalcareerinstitute.org/pages/imprint">Impressum</a></li>
+        <li><a href="https://digitalcareerinstitute.org/pages/privacy">Datenschutz</a></li>
+        <li>©Copyright</li>
+    </ul>
+    <span>Impressum - Datenschutz - ©Copyright</span>
+</body>
+</html>
